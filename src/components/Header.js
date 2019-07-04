@@ -8,8 +8,10 @@ function Header() {
       <nav>
         <img src={facebook} alt="Facebook" />
         <div>
-          <strong>Meu perfil</strong>
-          <img class="material-icons" src={avatar} />
+          <a href="">
+            <strong>Meu perfil</strong>
+            <img class="avatar" src={avatar} />
+          </a>
         </div>
       </nav>
     </header>

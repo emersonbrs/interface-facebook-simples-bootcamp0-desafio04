@@ -25,16 +25,108 @@ header nav {
   margin: 0 40px;
 }
 
-header nav div {
+header nav div a {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
-header nav div strong {
+header nav div a strong {
+  color: #fff;
   margin-right: 10px;
 }
 
-header nav div img.material-icons {
+header nav div a img.avatar {
   fill: #cccccc;
   height: 25px;
+}
+
+.postlist {
+  width: 900px;
+  margin: 0 auto 10px;
+}
+
+.postlist {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.postlist .post {
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.postlist .post .line {
+  height: 1px;
+  background: #ddd;
+  margin-top: 15px;
+}
+
+/* Header */
+
+.postlist .post .postheader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.postlist .post .postheader img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.postlist .post .postheader .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.postlist .post .postheader .info #author {
+  color: #000;
+}
+
+.postlist .post .postheader .info #date {
+  color: #464545;
+  font-size: 13px;
+}
+
+.postlist .post .postcontent {
+  color: #000;
+}
+
+/* Comments */
+
+.postlist .post .commentsinfo {
+  margin: 20px 0 0 0;
+}
+
+.postlist .post .commentsinfo .data {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.postlist .post .commentsinfo .data p {
+  margin-left: 10px;
+  background: #ddd;
+  width: 100%;
+  color: #000;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.postlist .post .commentsinfo .data p strong {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.postlist .post .commentsinfo .data img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
